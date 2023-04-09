@@ -26,7 +26,6 @@ class _MainScreenState extends State<MainScreen> {
       if (sqrt(_enteredValue!).floor() == sqrt(_enteredValue!).ceil() &&
           pow(_enteredValue!, 1 / 3).floor() ==
               pow(_enteredValue!, 1 / 3).ceil()) {
-        // Entered value is both a square and a cube number
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -46,7 +45,6 @@ class _MainScreenState extends State<MainScreen> {
           },
         );
       } else if (sqrt(_enteredValue!).floor() == sqrt(_enteredValue!).ceil()) {
-        // Entered value is a square number
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -66,7 +64,6 @@ class _MainScreenState extends State<MainScreen> {
         );
       } else if (pow(_enteredValue!, 1 / 3).floor() ==
           pow(_enteredValue!, 1 / 3).ceil()) {
-        // Entered value is a cube number
         showDialog(
           context: context,
           builder: (BuildContext context) {
@@ -85,7 +82,6 @@ class _MainScreenState extends State<MainScreen> {
           },
         );
       } else {
-        // Entered value is neither a square nor a cube number
         showDialog(
           context: context,
           builder: (BuildContext context) {
